@@ -1,0 +1,64 @@
+html {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  -webkit-box-sizing: inherit;
+  -moz-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+.wrapper {
+  box-shadow: 10px 10px 10px hotpink;
+  max-width: 750px;
+  width: 100%;
+  margin: 20px auto;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+.card {
+  border: 3px solid hotpink;
+  box-shadow: -5px -5px 5px black;
+  width: 150px;
+  height: 150px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  &__image{
+    &--1 {
+      background-image: $number1;
+    }
+    &--2 {
+      background-image: $number2;
+    }
+    &--3 {
+      background-image: $number3;
+    }
+    &--4 {
+      background-image: $number4;
+    }
+    &--5 {
+      background-image: $number5;
+    }
+    &--6 {
+      background-image: $number6;
+    }
+    &--7 {
+      background-image: $number7;
+    }
+    &--8 {
+      background-image: $number8;
+    }
+    &--9 {
+      background-image: $number9;
+    }
+    &--10 {
+      background-image: $number10;
+    }
+  }
+  &--hidden {
+    background-image: none;
+    background-color: mediumpurple;
+  }
+}
